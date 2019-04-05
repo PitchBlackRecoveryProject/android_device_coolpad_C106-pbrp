@@ -19,6 +19,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcryptfs_hw
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.keystore=msm8952
+
 # Kernel
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/Image.gz-dtb:kernel
